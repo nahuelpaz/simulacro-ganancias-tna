@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    background-attachment: fixed;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.fixed-bottom-right {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.icon-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+    padding: 12px 16px;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.icon-link:hover {
+    transform: scale(1.05);
+    background-color: #444;
+}
+
+.icon-text {
+    margin-left: 8px;
+    font-weight: 600;
+}
+
+.fa-github {
+    font-size: 24px;
+}
+
+input {
+    align-self: center;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+#interesMensual {
+    text-align: center;
+    color: black;
+    border: 1px solid #0d6efd;
+}
+
+label {
+    text-align: center;
+}
+
+button {
+    width: 25%;
+    align-self: center;
+    margin-bottom: 5px;
+}
+
+#resultadoContenedor {
+    display: flex;
+    flex-direction: column;
+}
+
+#resultadoContenedor label {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#resultadoContenedor input {
+    align-self: center;
+    margin-top: 5px;
+}
+
+.disabled {
+    opacity: 0;
+}
+
+input::placeholder {
+    font-size: 14px;
+}
+
+.resultadoFinal {
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .icon-link {
+
+        padding: 6px 8px;
+    }
+
+    .icon-text {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .fa-github {
+        font-size: 20px;
+    }
+}
+
+/* Estilos responsivos para la tabla */
+@media (max-width: 767px) {
+
+    .icon-link {
+
+        padding: 6px 8px;
+    }
+
+    .icon-text {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .fa-github {
+        font-size: 20px;
+    }
+
+    button {
+        width: 50%;
+    }
+
+    .table {
+        width: 100%;
+        overflow-x: auto;
+        display: block;
+        text-align: left;
+    }
+
+    .table thead,
+    .table tbody,
+    .table tr,
+    .table th,
+    .table td {
+        display: block;
+        width: auto;
+        text-align: center;
+    }
+
+    .table th {
+        background-color: #f2f2f2;
+        padding: 0.5rem 0;
+    }
+
+    .table td {
+        padding: 0.5rem 0;
+    }
+}
